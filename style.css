@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+:root {
+  --primary--clr: #dde1cd;
+  --secondary--clr: #637a30;
+}
+
+body {
+  background-color: #e8eae0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin: 0 auto 50px;
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 600;
+  text-align: center;
+  color: #42563d;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.input {
+  background-color: transparent;
+  border: 0;
+  border-radius: 4px;
+  width: 100%;
+  padding-top: 0.5rem;
+  font-size: 12px;
+  font-weight: normal;
+  outline: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.img__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  max-width: 40%;
+  margin: 0;
+  position: relative;
+}
+
+.img__wrapper .img-background {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img__wrapper .img-sign__wrapper {
+  position: absolute;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  right: -87px;
+}
+
+.img__wrapper .img-sign__wrapper img {
+  height: 100%;
+}
+
+.input__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1.125rem;
+}
+
+.input__wrapper > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.label__wrapper {
+  background: #dde1cd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: rgba(0, 0, 0, 0.5);
+  height: 54px;
+  padding: 0.5rem;
+  margin-bottom: 1.875rem;
+  font-size: 10px;
+  font-weight: 300;
+  border-radius: 4px;
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+  border: solid 1px transparent;
+}
+
+.label__wrapper:focus-within, .label__wrapper:hover {
+  border: solid 1px #637a30;
+  background-color: #f1f3e6;
+}
+
+.form__wrapper {
+  width: 54%;
+  max-width: 54%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__wrapper form {
+  max-width: 500px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.btn {
+  padding: 0.75rem 3.125rem;
+  border-radius: 4px;
+  background-color: #e1e2d9;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.38;
+  cursor: pointer;
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.btn--success {
+  background-color: #637a30;
+  color: #fff;
+}
+
+.footer {
+  margin: auto;
+  margin-top: 2rem;
+}
+
+span {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: normal;
+  line-height: 1.38;
+  letter-spacing: 0.48px;
+}
+
+.footer__login {
+  color: #637a30;
+  cursor: pointer;
+}
+
+.footer__login:hover {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .img__wrapper,
+  .form__wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+  .img__wrapper {
+    max-height: 300px;
+  }
+  .img__wrapper .img-sign__wrapper {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    bottom: -87px;
+  }
+  .img__wrapper .img-sign__wrapper img {
+    -webkit-transform: rotate(0.25turn);
+            transform: rotate(0.25turn);
+  }
+  .form__wrapper form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
